@@ -1,4 +1,4 @@
- scaffolding */
+/* scaffolding */
 
 @import url("https://fonts.googleapis.com/css?family=Poppins:700|Roboto:400,500,500i");
 
@@ -12,10 +12,6 @@ body {
 	color: #777;
 
 	background-color: #ffd200; /* temp */
-}
-
-body.elements {
-	font-weight: 400;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -199,6 +195,25 @@ a:hover {
 	right: 0;
 	left: 0;
 	z-index: 9999;
+}
+
+.header.fixed {
+	position: fixed;
+	top: -70px;
+	transform: translateY(70px);
+
+	background: #ffd200;
+	box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.1);
+	
+	transition: transform 500ms ease, background 500ms ease;
+}
+
+.header.fixed .navbar-light .navbar-nav .nav-link {
+	line-height: 70px;
+}
+
+.header.fixed .navbar-light .navbar-nav .dropdown-menu .nav-link {
+	line-height: 45px;
 }
 
 .navbar-light {
@@ -642,7 +657,7 @@ a:hover {
 
 .project__descr {
 	margin-bottom: 0px;
-	
+
 	font-size: 15px;
 	color: #fff;
 }

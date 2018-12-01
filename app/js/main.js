@@ -1,3 +1,26 @@
+/* header fixed */
+
+var nav_offset_top = $("header").height() + 70;
+
+function navbarFixed() {
+	if ($(".header").length) {
+		$(window).scroll(function() {
+			var scroll = $(window).scrollTop();
+			if (scroll >= nav_offset_top) {
+				$(".header").addClass("fixed");
+			} else {
+				$(".header").removeClass("fixed");
+			}
+		});
+	}	
+}
+
+navbarFixed();
+
+/**/
+
+
+
 /* owl carousel */
 
 $(document).ready(function(){
@@ -10,6 +33,8 @@ $(document).ready(function(){
 });
 
 /**/
+
+
 
 /* isotope */
 
