@@ -503,3 +503,7 @@ a:hover {
 }
 
 /**/
+
+.owl-dots {
+	display: none;
+}
